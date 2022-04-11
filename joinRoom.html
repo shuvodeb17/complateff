@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- Boostrap link -->
+    <link rel="stylesheet" href="bs5/css/bootstrap.css">
+    <link rel="stylesheet" href="joinRoom.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+
+    <!-- loading start here -->
+    <div id="preloader"></div>
+    <!-- loading end here -->
+
+
+    <div class="container mt-4">
+      <h1 class="text-center"><i class="fas fa-book-open text-warning"></i> Hey Players Please Join<span class="text-warning"> Custom Room</span></h1>
+
+      <form id="book-form">
+        <div class="form-group">
+          <label for="title">Room Name & Taka</label>
+          <input type="text" id="title" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="text" id="time" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="author">Room ID</label>
+          <input type="text" id="author" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="year">Password</label>
+          <input type="text" id="year" class="form-control" />
+        </div>
+
+        <div class="form-group mb-5">
+          <label for="vs">Map/VS</label>
+          <input type="text" id="vs" class="form-control" />
+        </div>
+
+        <input type="submit" value="Post" class="btn btn-warning btn-block" />
+        <input type="submit" value="Delete" class="btn btn-danger btn-block" />
+
+      </form>
+      <table class="table table-striped mt-5 text-center">
+        <thead>
+          <tr>
+            <th>Room Name & Taka</th>
+            <th>Time</th>
+            <th>Room ID</th>
+            <th>Password</th>
+            <th>Map/VS</th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="bs5/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
